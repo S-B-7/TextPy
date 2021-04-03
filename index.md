@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+# TextPy
 
-You can use the [editor on GitHub](https://github.com/S-B-7/TextPy/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<img src = "icon.png" width = "100" height = "100"/>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<br><br>
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## About 
 
-- Bulleted
-- List
+TextPy is a simple text editor made using python and PyQt5. It is essentialy notepad with some additional features i added like tabs, color customization ,etc.
+<br><br>
 
-1. Numbered
-2. List
+## Features 
 
-**Bold** and _Italic_ and `Code` text
+- Text search with options for case sensitive search and regular expressions
+- Option to work on multiple files at once uisng different tabs
+- Auto-Save option for automatically saved any unsaved files
+- Options to customize the colors of the different elements of the UI
+- Option to position the tab bar and the tool bar according to user preference
+- Several keyboard shortcuts to perform different actions
 
-[Link](url) and ![Image](src)
-```
+## Keyboard shortcuts 
+<br>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+|Shortcut          | Action                  |
+|------------------|-------------------------|
+| CTRL + '+'       | increase font size by 2 |
+| CTRL + '-'       | decrease font size by 2 |
+| CTRL + O         | Open                    |
+| CTRL + S         | Save                    |
+| CTRL + X         | Cut                     |
+| CTRL + C         | Copy                    |
+| CTRL + V         | Paste                   |
+| CTRL + Z         | Undo                    |
+| CTRL + Y         | Redo                    |
+| CTRL + F         | Find                    |
+| CTRL + SHIFT + T | Toggle View Tool bar    |
+| CTRL + SHIFT + R | Toggle View Tab bar     |
+| CTRL + Q         | Close                   |
 
-### Jekyll Themes
+<br><br>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/S-B-7/TextPy/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Upcoming feature 
+These are the features i am currently working on :
 
-### Support or Contact
+- Text Replace
+- Print file
+<br><br>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## What Am I Using?
+
+- Python
+- PyQt5 
+
+
+
+
