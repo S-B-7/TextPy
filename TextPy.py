@@ -150,17 +150,17 @@ class MainWinodw(pqw.QMainWindow):
     def __init__(self, app,*args, **kwargs):
 
         super().__init__(*args, **kwargs)
-        self.settings = pqc.QSettings("TextiPy", "Configs")
-
+        self.settings = pqc.QSettings("TextPy", "Configs")
+        
         self.config = DEFAULT_CONFIG
 
         self.app = app
-        self.setWindowTitle('TextiPy')
+        self.setWindowTitle('TextPy')
         self.setWindowIcon(pqg.QIcon(
-            os.path.join(
-                os.path.dirname(__file__), 
+                os.path.join(
+                os.path.dirname(__file__),
                 'icon.ico'
-            )
+                )
         ))
         self.setGeometry(0, 0, 800, 600)
         self.tabBrowser = CustomTabWidget(self)
@@ -189,11 +189,11 @@ class MainWinodw(pqw.QMainWindow):
         self.tabBar.topLevelChanged.connect(lambda: self.toolbarPositionChanged("tabBarPosition", self.tabBar))
         self.tabBrowser.setOnCurrentTabChange(
             lambda index: self.setWindowTitle
-                (f"{self.tabBrowser.widget(index).title} - TextiPy")
+                (f"{self.tabBrowser.widget(index).title} - TextPy")
             if self.tabBrowser.widget(index)
             else None
         )
-        self.setWindowTitle(f"{self.tabBrowser.widget(0).title} - TextiPy")
+        self.setWindowTitle(f"{self.tabBrowser.widget(0).title} - TextPy")
 
     def makeTabBar(self):
         self.tabBar = self.addToolBar('TabBar')
@@ -569,8 +569,9 @@ class MainWinodw(pqw.QMainWindow):
 
     def loadConfig(self):
         config = self.settings.value('config')
-        self.setConfig(config)
-        self.fontBox.setCurrentText(config['font'].family())
+        if config:
+            self.setConfig(config)
+            self.fontBox.setCurrentText(config['font'].family())
 
 
     def closeEvent(self, event: pqg.QCloseEvent) :
@@ -618,8 +619,8 @@ class MainWinodw(pqw.QMainWindow):
 
 
 if __name__ == '__main__':
-    TextiPy = pqw.QApplication(sys.argv)
-    win = MainWinodw(TextiPy)
+    TextPy = pqw.QApplication(sys.argv)
+    win = MainWinodw(TextPy)
     win.show()
-    sys.exit(TextiPy.exec_())
+    sys.exit(TextPy.exec_())
 
