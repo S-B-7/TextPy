@@ -156,6 +156,12 @@ class MainWinodw(pqw.QMainWindow):
 
         self.app = app
         self.setWindowTitle('TextiPy')
+        self.setWindowIcon(pqg.QIcon(
+            os.path.join(
+                os.path.dirname(__file__), 
+                'icon.ico'
+            )
+        ))
         self.setGeometry(0, 0, 800, 600)
         self.tabBrowser = CustomTabWidget(self)
         self.textFont = pqg.QFont()
