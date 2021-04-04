@@ -7,17 +7,15 @@
 body{
     background-color: var(--bg);
     font-family: var(--font);
-    overflow-x: hidden;
+    
 }
 
 
 .circle{
     background-color: var(--primary-bg);
-    width : 120vh;
-    height:110vh;
-    min-width: 650px;
-    min-height: 550px;
-    border-radius: 50%;
+    width : auto;
+    height:105%;
+    
     display : flex;
     align-items: center;
     
@@ -26,11 +24,22 @@ body{
 
 #circle-1{
     justify-content: flex-end;
-    transform: translate(-40%,-5%);
+    border-radius: 0 200vh 200vh 0;
+    transform: translate(0, -5%);
+    margin-right: 5rem;
+}
+
+#circle-2{
+    border-radius: 200vh 0 0 200vh;
+    transform: translate(0, -5%);
+    min-width: 25rem;
+    width: auto;
+    height : 100vh
 }
 
 .circle-main{
-    margin-right: 10%;
+    margin-left: 5rem;
+    margin-right: 3rem;
 }
 
 
@@ -48,12 +57,13 @@ body{
 #first-page-2-half{
     background-color: var(--bg);
     height : 100vh;
-    transform: translate(00%,-1%);
+    
     display: flex;
     flex-direction: column;
    align-items: center;
     justify-content: center;
-    transform: translate(-27%);
+    poda
+    
    
 }
 
@@ -65,7 +75,7 @@ body{
 
 #ss{
     transform: translate(0%, -2rem);
-    width : 110%;
+    width : 80%;
     height : auto;
     
 }
@@ -107,21 +117,17 @@ button:hover{
 #second-page{
     margin-top: 10%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
    
  }
 
- #circle-2{
-    transform: translate(40%);
- }
  
  #features-title{
     margin-left: 10%;
  }
 
  #feature-list{
-    margin-top: 20%;
-    margin-left: 10%;
+    margin-top: 18%;
     font-family: 'Roboto', sans-serif;
     list-style-type: disc;
     list-style-position: outside;
