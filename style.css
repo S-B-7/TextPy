@@ -11,6 +11,8 @@ body{
 }
 .title{
     font-size: 72px;
+    display: flex;
+    justify-content: center;
   
 }
 .subtitle{
@@ -36,6 +38,7 @@ body{
         border-radius: 0 200vh 200vh 0;
         transform: translate(0, -5%);
         margin-right: 5rem;
+        padding-right: 9rem;
     }
 
     #circle-2{
@@ -45,6 +48,7 @@ body{
         width: auto;
         height : 100vh;
         flex:1;
+        margin-left: 5rem;
        
     }
     
@@ -93,8 +97,12 @@ body{
     }
 
     #features-title{
-        margin-left: 10%;
+        margin-left: 20%;
      }
+    
+    .title{
+        transform: translateX(-2rem);
+    }
     
 }
 
@@ -103,7 +111,8 @@ body{
         width : 100vw;
         height: auto;
         align-items: center;
-        background-color: var(--primary-bg);
+        background-color: var(--bg);
+       
         display: flex;
         justify-items: center;
         align-items: center;
@@ -144,13 +153,16 @@ body{
     }
 
     #github-button{
-        width :auto
+        width :auto;
         height : 4rem;
+        align-self: center;
 
     }
 
     #github-page{
-        margin:2rem
+        margin:2rem;
+        display: flex;
+        justify-content: center;
     }
 
     #first-page-2-half  {
@@ -214,9 +226,6 @@ button:hover{
     transform: translate(0%, 0.3rem);
 }
 
-
-
- 
  
  #feature-list{
    
@@ -232,8 +241,9 @@ button:hover{
     margin: 1.5rem;
  }
 
- 
- 
- 
+#icon-svg{
+    width:72px;
+    height: 60px;
+    transform: translateY(1.3rem);
+}
 
- 
