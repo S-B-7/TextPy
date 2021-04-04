@@ -1,0 +1,149 @@
+:root{
+    --bg : #EEEAEA;
+    --font : 'Roboto Mono', monospace;
+    --primary-bg : #c4c4c4;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: var(--font);
+    overflow-x: hidden;
+}
+
+
+.circle{
+    background-color: var(--primary-bg);
+    width : 120vh;
+    height:110vh;
+    min-width: 650px;
+    min-height: 550px;
+    border-radius: 50%;
+    display : flex;
+    align-items: center;
+    
+    
+}
+
+#circle-1{
+    justify-content: flex-end;
+    transform: translate(-40%,-5%);
+}
+
+.circle-main{
+    margin-right: 10%;
+}
+
+
+.title{
+    font-size: 72px;
+    width:20%;
+}
+.subtitle{
+  
+   font-size: 24px;
+   max-width: 20rem;
+   min-width: 20rem;
+}
+
+#first-page-2-half{
+    background-color: var(--bg);
+    height : 100vh;
+    transform: translate(00%,-1%);
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    justify-content: center;
+    transform: translate(-27%);
+   
+}
+
+#first-page{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+  
+}
+
+#ss{
+    transform: translate(0%, -2rem);
+    width : 110%;
+    height : auto;
+    
+}
+
+
+
+button{
+    background-color: var(--primary-bg);
+    border : 0;
+    padding: 10px;
+    font-family: var(--font);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    outline: none;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+#download-button{
+    width: 25rem;
+    height: 4rem;
+    
+}
+
+button:hover{
+    transform: scale(1.02);
+    filter: brightness(105%);
+    cursor: pointer;
+   
+}
+
+#win-logo{
+    width: 1.5rem;
+    height:1.5rem;
+    transform: translate(0%, 0.3rem);
+}
+
+#second-page{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+   
+ }
+
+ #circle-2{
+    transform: translate(40%);
+ }
+ 
+ #features-title{
+    margin-left: 10%;
+ }
+
+ #feature-list{
+    margin-top: 20%;
+    margin-left: 10%;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: disc;
+    list-style-position: outside;
+    font-size: x-large;
+    font-weight: 500;
+ }
+
+ li{
+    margin: 1.5rem;
+ }
+
+ #github-page{
+    margin: 10rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ #github-button{
+    font-size: x-large;
+    width: 40rem;
+    height: 4rem;
+ }
+
+ 
