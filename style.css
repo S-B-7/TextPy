@@ -107,6 +107,10 @@ body{
         display: flex;
         justify-items: center;
         align-items: center;
+        margin-top:0;
+        margin-left: 0;
+        padding-top: 0;
+        padding-left: 0;
     }
 
     .circle-main{
@@ -116,12 +120,15 @@ body{
         justify-content: center;
         margin:2rem;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 2rem;
     }
 
     .title{
         text-align: center;
         width:100%;
+    }
+    .subtitle{
+        text-align: center;
     }
 
     #second-page{
@@ -137,7 +144,7 @@ body{
     }
 
     #github-button{
-        width : 100%;
+        width :auto
         height : 4rem;
 
     }
