@@ -9,69 +9,160 @@ body{
     font-family: var(--font);
     
 }
-
-
-.circle{
-    background-color: var(--primary-bg);
-    width : auto;
-    height:105%;
-    
-    display : flex;
-    align-items: center;
-    
-    
-}
-
-#circle-1{
-    justify-content: flex-end;
-    border-radius: 0 200vh 200vh 0;
-    transform: translate(0, -5%);
-    margin-right: 5rem;
-}
-
-#circle-2{
-    border-radius: 200vh 0 0 200vh;
-    transform: translate(0, -5%);
-    min-width: 25rem;
-    width: auto;
-    height : 100vh
-}
-
-.circle-main{
-    margin-left: 5rem;
-    margin-right: 3rem;
-}
-
-
 .title{
     font-size: 72px;
-    width:20%;
+  
 }
 .subtitle{
   
    font-size: 24px;
-   max-width: 20rem;
-   min-width: 20rem;
+ 
 }
+
+@media screen and (min-width: 900px) {
+    
+    .circle{
+        background-color: var(--primary-bg);
+        width : auto;
+        height:105%;
+        display : flex;
+        align-items: center;
+        
+        
+    }
+    
+    #circle-1{
+        justify-content: flex-end;
+        border-radius: 0 200vh 200vh 0;
+        transform: translate(0, -5%);
+        margin-right: 5rem;
+    }
+
+    #circle-2{
+        border-radius: 200vh 0 0 200vh;
+        transform: translate(0, -5%);
+        min-width: 25rem;
+        width: auto;
+        height : 100vh;
+        flex:1;
+       
+    }
+    
+    .circle-main{
+        margin-left: 5rem;
+        margin-right: 3rem;
+    }
+
+    #first-page{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+     }
+
+     #second-page{
+        margin-top: 10%;
+        display: flex;
+        grid-template-columns: 1.5fr 1fr;
+       
+     }
+   
+    #feature-list{
+        margin-top: 18%;
+    }
+    .subtitle{
+        min-width: 20rem;
+    }
+    #github-button{
+        font-size: x-large;
+        width: 40rem;
+        height: 4rem;
+     }
+    #github-page{
+        margin: 10rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+     }
+     #download-button{
+        width: 25rem;
+        height: 4rem;
+        
+    }
+}
+
+@media screen and (max-width : 900px){
+    .circle{
+        width : 100vw;
+        height: auto;
+        align-items: center;
+        background-color: var(--primary-bg);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .circle-main{
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        margin:2rem;
+        margin-top: 0;
+    }
+
+    .title{
+        text-align: center;
+        width:100%
+    }
+
+    #second-page{
+       display: flex;
+       flex-direction: column-reverse;
+    }
+
+    #circle-2{
+        background-color: var(--bg);
+        margin: 0;
+        padding: 0;
+        margin-top: 5rem;
+    }
+
+    #github-button{
+        width : 100%;
+        height : 4rem;
+
+    }
+
+    #github-page{
+        margin:2rem
+    }
+
+    #first-page-2-half  {
+        margin-top: 2.5rem;
+    }
+
+    #download-button{
+        width : 100%;
+        height : 4rem;
+        
+    }
+
+    #feature-list{
+        margin-left: 2rem;
+    }
+}
+
+
 
 #first-page-2-half{
     background-color: var(--bg);
     height : 100vh;
-    
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     justify-content: center;
-    poda
-    
-   
 }
 
-#first-page{
-   display: grid;
-   grid-template-columns: 1fr 2fr;
-  
-}
+
 
 #ss{
     transform: translate(0%, -2rem);
@@ -79,8 +170,6 @@ body{
     height : auto;
     
 }
-
-
 
 button{
     background-color: var(--primary-bg);
@@ -95,11 +184,7 @@ button{
     
 }
 
-#download-button{
-    width: 25rem;
-    height: 4rem;
-    
-}
+
 
 button:hover{
     transform: scale(1.02);
@@ -114,12 +199,7 @@ button:hover{
     transform: translate(0%, 0.3rem);
 }
 
-#second-page{
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-   
- }
+
 
  
  #features-title{
@@ -127,29 +207,21 @@ button:hover{
  }
 
  #feature-list{
-    margin-top: 18%;
+   
     font-family: 'Roboto', sans-serif;
     list-style-type: disc;
     list-style-position: outside;
     font-size: x-large;
     font-weight: 500;
+    flex : 1.5;
  }
 
  li{
     margin: 1.5rem;
  }
 
- #github-page{
-    margin: 10rem;
-    margin-bottom: 5rem;
-    display: flex;
-    justify-content: center;
- }
  
- #github-button{
-    font-size: x-large;
-    width: 40rem;
-    height: 4rem;
- }
+ 
+ 
 
  
