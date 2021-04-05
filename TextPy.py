@@ -99,14 +99,13 @@ class Tab(pqw.QWidget):
         try:
             Text = self.text.toPlainText().strip()
             if Text:
-                print(path)
+               
                 with open (path, 'w') as file:
                     file.write(Text)
                 self.saved = True
                 self.setTitle( os.path.basename(self.file))
 
         except  Exception as e :
-            print(e)
             return Tab.ERROR
 
     def saveAsFile(self):
@@ -619,7 +618,7 @@ class MainWinodw(pqw.QMainWindow):
         return return_
 
     def help(self):
-        print("sa")
+       
         hw = HelpDialog()
         hw.show()
         hw.exec_()

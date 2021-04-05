@@ -82,11 +82,11 @@ class CustomTabWidget(pqw.QStackedWidget):
         self.delFunc = func
 
     def delTab(self, index:int):
-        print(self.addBt)
+      
         if self.addBt:
-            print(index)
+           
             if index == self.lastTabIndex():
-                print(index, " kk")
+               
                 return
             self.tabBar.removeTab(self.lastTabIndex())
        
@@ -99,7 +99,7 @@ class CustomTabWidget(pqw.QStackedWidget):
                
                 return CustomTabWidget.CANCEL
 
-        print(index,';;' )
+      
         self.tabBar.removeTab(index)
         self.removeWidget(self.widget(index))
         if self.addBt:
