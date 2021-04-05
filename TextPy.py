@@ -6,6 +6,8 @@ import os
 from CustomTabWidget import CustomTabWidget
 from configChangeDialog import ConfigChangeDialog , DEFAULT_CONFIG
 import datetime
+from helpDialog import HelpDialog
+import resources
 
 
 class Tab(pqw.QWidget):
@@ -156,12 +158,7 @@ class MainWinodw(pqw.QMainWindow):
 
         self.app = app
         self.setWindowTitle('TextPy')
-        self.setWindowIcon(pqg.QIcon(
-                os.path.join(
-                os.path.dirname(__file__),
-                'icon.ico'
-                )
-        ))
+        self.setWindowIcon(pqg.QIcon( ":/icon.ico" ))
         self.setGeometry(0, 0, 800, 600)
         self.tabBrowser = CustomTabWidget(self)
         self.textFont = pqg.QFont()
@@ -336,6 +333,10 @@ class MainWinodw(pqw.QMainWindow):
 
         settings_menu = self.menuBar().addMenu('Settings')
         settings_menu.addAction('change settings', self.changeSettings)
+
+        help_menu = self.menuBar().addMenu('Help')
+        help_menu.addAction('Help',self.help)
+    
 
     def textCut(self):
         self.tabBrowser.currentWidget().text.cut()
@@ -616,6 +617,12 @@ class MainWinodw(pqw.QMainWindow):
                     return_ = True
                     self.addTab(file)
         return return_
+
+    def help(self):
+        print("sa")
+        hw = HelpDialog()
+        hw.show()
+        hw.exec_()
 
 
 if __name__ == '__main__':
